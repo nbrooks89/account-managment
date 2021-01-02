@@ -2,8 +2,8 @@ import "./Plans.css";
 
 function Plans() {
   return (
-    <div className="nav-container">
-      <h1>hello world</h1>
+    <div className="plans-container">
+      <h1>plans</h1>
     </div>
   );
 }

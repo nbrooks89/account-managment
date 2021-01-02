@@ -1,9 +1,10 @@
 import "./Notifications.css";
+import Table from "../../components/Table/Table";
 
 function Notifications() {
   return (
-    <div className="nav-container">
-      <h1>notifications</h1>
+    <div className="notifications-container">
+      <Table />
     </div>
   );
 }

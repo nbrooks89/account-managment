@@ -1,0 +1,15 @@
+td,
+th {
+  border: 1px solid black;
+}
+.invisible {
+  border: none;
+  background-color: transparent;
+}
+.leftHeader {
+  font-weight: bold;
+  background-color: lightgray;
+}
+th {
+  background-color: lightgray;
+}

@@ -9,11 +9,15 @@ import { Route } from "react-router-dom";
 function App() {
   return (
     <div className="app-container">
-      <LeftNav />
-      <Route exact path="/" render={() => <UserProfile />} />
-      <Route path="/notifications" render={() => <Notifications />} />
-      <Route path="/plans" render={() => <Plans />} />
-      <Route path="/billing" render={() => <Billing />} />
+      <aside>
+        <LeftNav />
+      </aside>
+      <main>
+        <Route exact path="/" render={() => <UserProfile />} />
+        <Route path="/notifications" render={() => <Notifications />} />
+        <Route path="/plans" render={() => <Plans />} />
+        <Route path="/billing" render={() => <Billing />} />
+      </main>
     </div>
   );
 }
