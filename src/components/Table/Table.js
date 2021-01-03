@@ -1,41 +1,69 @@
 import React from "react";
+import "./Table.css";
+import CheckBox from "../CheckBox/CheckBox";
 
-const Table = ({ columns, data }) => {
+const Table = () => {
   return (
-    <table>
-      <thead>
-        <tr>
-          <th class="invisible"></th>
-          <th>Email </th>
-          <th> Slack</th>
-          <th>Twilio</th>
-          <th> SNS</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="leftHeader">Security</td>
-          <td>Normal Cell</td>
-          <td>Normal Cell</td>
-          <td>Normal Cell</td>
-          <td>Normal Cell</td>
-        </tr>
-        <tr>
-          <td class="leftHeader">Compliance</td>
-          <td>Normal Cell</td>
-          <td>Normal Cell</td>
-          <td>Normal Cell</td>
-          <td>Normal Cell</td>
-        </tr>
-        <tr>
-          <td class="leftHeader">Cost Savings</td>
-          <td>Normal Cell</td>
-          <td>Normal Cell</td>
-          <td>Normal Cell</td>
-          <td>Normal Cell</td>
-        </tr>
-      </tbody>
-    </table>
+    <div className="table-container">
+      <table className="table">
+        <thead>
+          <tr>
+            <th className="invisible"></th>
+            <th>Email </th>
+            <th> Slack</th>
+            <th>Twilio</th>
+            <th> SNS</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td className="leftHeader">Security</td>
+            <td>
+              <CheckBox />
+            </td>
+            <td>
+              <CheckBox />
+            </td>
+            <td>
+              <CheckBox />
+            </td>
+            <td>
+              <CheckBox />
+            </td>
+          </tr>
+          <tr>
+            <td className="leftHeader">Compliance</td>
+            <td>
+              <CheckBox />
+            </td>
+            <td>
+              <CheckBox />
+            </td>
+            <td>
+              <CheckBox />
+            </td>
+            <td>
+              <CheckBox />
+            </td>
+          </tr>
+          <tr>
+            <td className="leftHeader">Cost Savings</td>
+            <td>
+              <CheckBox />
+            </td>
+            <td>
+              <CheckBox />
+            </td>
+            <td>
+              <CheckBox />
+            </td>
+            <td>
+              <CheckBox />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   );
 };
 

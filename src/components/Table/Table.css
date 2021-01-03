@@ -1,15 +1,14 @@
-td,
-th {
-  border: 1px solid black;
+/* .table-container {
+  margin: 0 60px;
+} */
+thead {
+  border-top: hidden;
 }
-.invisible {
-  border: none;
-  background-color: transparent;
+
+thead tr th {
+  font-size: 24px;
 }
+
 .leftHeader {
-  font-weight: bold;
-  background-color: lightgray;
-}
-th {
-  background-color: lightgray;
+  font-size: 20px;
 }

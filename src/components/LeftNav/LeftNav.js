@@ -1,11 +1,9 @@
 import "./LeftNav.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faUser, faBell } from "@fortawesome/free-regular-svg-icons";
 import {
   faFileInvoiceDollar,
   faUser,
   faBell,
-  faUserPlus,
 } from "@fortawesome/free-solid-svg-icons";
 import { NavLink } from "react-router-dom";
 

@@ -1,12 +1,6 @@
-.user-profile-container {
-  margin: 30px;
-}
-
 .user-profile-container main {
   display: flex;
-  border-top: 1px solid rgb(222, 224, 222);
-  margin-top: 70px;
-  margin-bottom: 80px;
+
   padding-top: 80px;
 }
 
@@ -49,7 +43,7 @@
   box-shadow: 0 0 3px rgba(19, 18, 18, 0.75);
 }
 
-.user-profile-container form button {
+.user-profile-container button {
   width: 180px;
   height: 40px;
   background-color: #162d6e;
@@ -75,6 +69,8 @@ input#input {
   font-family: "Roboto", sans-serif;
 }
 
-.user-profile-container header h2 {
+.user-profile-container header {
   color: rgb(140, 142, 140);
+  padding: 30px;
+  border-bottom: 1px solid rgb(222, 224, 222);
 }

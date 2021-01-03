@@ -22,7 +22,7 @@ function UserProfile() {
   return (
     <div className="user-profile-container">
       <header>
-        <h2>User Profile</h2>
+        <h2>Profile Settings</h2>
       </header>
       <main>
         <Media className="d-flex flex-column align-items-center">

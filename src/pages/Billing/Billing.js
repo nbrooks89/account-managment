@@ -1,9 +1,16 @@
+import React from "react";
+import PaymentMethod from "../../components/PaymentMethod/PaymentMethod";
 import "./Billing.css";
 
 function Billing() {
   return (
     <div className="billing-container">
-      <h1>billing</h1>
+      <header>
+        <h2>Billing Settings</h2>
+      </header>
+      <section>
+        <PaymentMethod />
+      </section>
     </div>
   );
 }

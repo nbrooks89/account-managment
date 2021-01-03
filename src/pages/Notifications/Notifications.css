@@ -1,0 +1,22 @@
+.notifications-container header {
+  color: rgb(140, 142, 140);
+  margin: 30px;
+}
+
+.notifications-container main {
+  border-top: 1px solid rgb(222, 224, 222);
+  padding: 40px 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.notifications-container button {
+  width: 180px;
+  height: 40px;
+  background-color: #162d6e;
+  color: white;
+  border-radius: 10;
+  font-family: "Roboto", sans-serif;
+  margin-left: 20px;
+  align-self: flex-end;
+}

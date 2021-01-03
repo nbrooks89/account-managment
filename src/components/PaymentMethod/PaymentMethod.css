@@ -1,0 +1,9 @@
+.radio-container {
+  display: flex;
+}
+
+.radio-container label img {
+  height: 50px;
+  margin-left: 8px;
+  margin-right: 25px;
+}
