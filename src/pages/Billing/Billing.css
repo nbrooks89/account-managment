@@ -3,3 +3,15 @@
   padding: 30px;
   border-bottom: 1px solid rgb(222, 224, 222);
 }
+.billing-container .form {
+  margin: 0 50px;
+}
+.billing-container .form h5 {
+  margin-bottom: 15px;
+  margin-left: 12px;
+}
+
+.billing-container .forms-container {
+  margin: 50px 0px;
+  justify-content: space-evenly;
+}

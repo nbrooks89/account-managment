@@ -1,5 +1,6 @@
 import React from "react";
-import PaymentMethod from "../../components/PaymentMethod/PaymentMethod";
+import PaymentMethodForm from "../../components/PaymentMethodForm/PaymentMethodForm";
+import BillingAddressForm from "../../components/BillingAddressForm/BillingAddressForm";
 import "./Billing.css";
 
 function Billing() {
@@ -8,9 +9,16 @@ function Billing() {
       <header>
         <h2>Billing Settings</h2>
       </header>
-      <section>
-        <PaymentMethod />
-      </section>
+      <div className="d-flex flex-row forms-container">
+        <div className="form">
+          <h5>Payment Method</h5>
+          <PaymentMethodForm />
+        </div>
+        <div className="form">
+          <h5>Billing Address</h5>
+          <BillingAddressForm />
+        </div>
+      </div>
     </div>
   );
 }

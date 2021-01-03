@@ -1,0 +1,29 @@
+.billing-address-field {
+  margin: 10px;
+  flex-basis: auto;
+}
+.billing-address-field input {
+  border: 1px solid rgb(228, 230, 228);
+  height: 33px;
+  max-width: 450px;
+  border-radius: 5px;
+}
+.billing-address-field label {
+  width: 100%;
+  margin-bottom: 0px;
+  font-family: "Roboto", sans-serif;
+}
+.billing-address-container form {
+  display: flex;
+  flex-direction: column;
+}
+.billing-address-container button {
+  width: 180px;
+  height: 40px;
+  background-color: #162d6e;
+  color: white;
+  border-radius: 10;
+  font-family: "Roboto", sans-serif;
+  margin-left: 20px;
+  align-self: flex-end;
+}
