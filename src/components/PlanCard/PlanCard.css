@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+.plan-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  padding: 5px;
+  width: 200px;
+}
+.plan-type {
+  margin: 15px;
+}
+.plan-cost {
+  font-size: 35px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+.plan-detail {
+  margin: 5px;
+  font-family: "Roboto";
+}
