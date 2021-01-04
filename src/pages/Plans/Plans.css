@@ -7,4 +7,40 @@
 .cards-container {
   display: flex;
   justify-content: center;
+  margin-top: 50px;
+}
+
+.plans-container {
+  width: 100%;
+}
+.select-membership {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.select-membership input {
+  display: none;
+}
+
+.select-membership label {
+  display: inline-block;
+  width: 170px;
+  height: 50px;
+  text-align: center;
+  border: 1px solid rgb(161, 159, 159);
+  background-color: #fcf9f9;
+  line-height: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+}
+
+#monthly:checked ~ label[for="monthly"],
+#annual:checked ~ label[for="annual"] {
+  background-color: #162d6e;
+  border: 2px solid rgb(81, 205, 192);
+  color: #fcf9f9;
+  font-weight: 600;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.65);
 }

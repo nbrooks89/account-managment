@@ -1,9 +1,12 @@
+.notifications-container {
+  margin-left: 0;
+}
 .notifications-container header {
   color: rgb(140, 142, 140);
   margin: 30px;
 }
 
-.notifications-container main {
+.notifications-container .table-container {
   border-top: 1px solid rgb(222, 224, 222);
   padding: 40px 40px;
   display: flex;

@@ -1,21 +1,89 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,600;0,700;1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap");
 .plan-card-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid black;
-  padding: 5px;
-  width: 200px;
+  border: 1px solid #162d6e;
+  padding: 15px;
+  width: 280px;
+  height: 480px;
+  margin: 0px 5px 30px 5px;
+}
+.plan-card-container:hover {
+  box-shadow: 0 0 9px rgba(0, 0, 0, 0.75);
 }
 .plan-type {
-  margin: 15px;
+  margin-top: 30px;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 20px;
 }
-.plan-cost {
-  font-size: 35px;
+.plan-cost .dollar-amount {
   font-weight: bold;
-  font-family: "Roboto", sans-serif;
+  font-size: 45px;
+  font-family: "Fira Sans", sans-serif;
+}
+.plan-cost .dollar-sign {
+  font-size: 18px;
+  font-weight: 100;
+  margin-right: 1px;
+  font-family: "Fira Sans", sans-serif;
+}
+.plan-cost .per-mo {
+  font-size: 18px;
+
+  font-family: "Fira Sans", sans-serif;
 }
 .plan-detail {
+  display: flex;
+  width: 100%;
   margin: 5px;
-  font-family: "Roboto";
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 15px;
+}
+.plan-detail i {
+  margin-right: 5px;
+  color: rgb(123, 230, 123);
+}
+
+.plan-card-container button {
+  width: 180px;
+  height: 40px;
+  background-color: #162d6e;
+  color: white;
+  border-radius: 10px;
+  font-family: "Fira Sans", sans-serif;
+  margin-top: 20px;
+}
+
+.select-plan {
+  height: 100%;
+  display: flex;
+}
+
+.select-plan input {
+  display: none;
+}
+
+.select-plan label {
+  width: 170px;
+  height: 50px;
+  text-align: center;
+  border: 1px solid #ddd;
+  background-color: #fcf9f9;
+  line-height: 50px;
+  cursor: pointer;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+  align-self: flex-end;
+}
+
+#lite:checked ~ label[for="lite"],
+#basic:checked ~ label[for="basic"],
+#pro:checked ~ label[for="pro"] {
+  background-color: #162d6e;
+  border: 2px solid rgb(23, 37, 36);
+  color: #fcf9f9;
+  font-weight: 600;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.65);
 }

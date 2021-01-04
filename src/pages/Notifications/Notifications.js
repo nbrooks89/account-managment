@@ -7,11 +7,11 @@ function Notifications() {
       <header>
         <h2>Notification Settings</h2>
       </header>
-      <main>
+      <div className="table-container">
         <Table />
 
         <button type="submit">Save</button>
-      </main>
+      </div>
     </div>
   );
 }

@@ -1,13 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Plans.css";
 import PlanCard from "../../components/PlanCard/PlanCard";
 
 const planDetails = [
   {
-    id: 1,
+    id: "lite",
     type: "Lite",
     costMonthly: "90",
-    costAnually: "1080",
+    costAnnually: "1080",
     detail1: "Scan Upto 250 Cloud Resources",
     detail2: "Security Posture & Cost Optimization",
     detail3: "Purchase from Addons",
@@ -16,10 +16,10 @@ const planDetails = [
     detail6: "Support Response Within 3 days",
   },
   {
-    id: 2,
+    id: "basic",
     type: "Basic",
     costMonthly: "180",
-    costAnually: "2160",
+    costAnnually: "2160",
     detail1: "Scan Upto 500 Cloud Resources",
     detail2: "Security Posture & Cost Optimization",
     detail3: "CIS Level 1 & 2 Included",
@@ -28,10 +28,10 @@ const planDetails = [
     detail6: "Support Response Within 1 day",
   },
   {
-    id: 3,
+    id: "pro",
     type: "Pro",
     costMonthly: "300",
-    costAnually: "3600",
+    costAnnually: "3600",
     detail1: "Scan Upto 1000 Cloud Resources",
     detail2: "Security Posture & Cost Optimization",
     detail3: "CIS Level 1 & 2 Included",
@@ -41,14 +41,29 @@ const planDetails = [
   },
 ];
 function Plans() {
+  const [selectedOption, setSelectedOption] = useState("monthly");
+  const [selectedPlan, setSelectedPlan] = useState("basic");
+  console.log(selectedPlan);
+  console.log(selectedOption);
+  const handleMembershipChange = (event) => {
+    setSelectedOption(event.target.value);
+  };
+  const handlePlanChange = (event) => {
+    setSelectedPlan(event.target.value);
+  };
+
   const planCard = planDetails.map((plan) => {
     return (
       <div>
         <PlanCard
+          selectedOption={selectedOption}
+          selectedPlan={selectedPlan}
+          setSelectedPlan={setSelectedPlan}
+          handlePlanChange={handlePlanChange}
           id={plan.id}
           type={plan.type}
           costMonthly={plan.costMonthly}
-          costAnually={plan.costAnually}
+          costAnnually={plan.costAnnually}
           detail1={plan.detail1}
           detail2={plan.detail2}
           detail3={plan.detail3}
@@ -64,6 +79,27 @@ function Plans() {
       <header>
         <h2>Plans Settings</h2>
       </header>
+      <div class="select-membership">
+        <input
+          type="radio"
+          name="annual"
+          id="annual"
+          value="annual"
+          checked={selectedOption === "annual"}
+          onChange={handleMembershipChange}
+        />
+        <input
+          type="radio"
+          name="monthly"
+          id="monthly"
+          value="monthly"
+          checked={selectedOption === "monthly"}
+          onChange={handleMembershipChange}
+        />
+        <label for="annual">Annual</label>
+        <label for="monthly">Monthly</label>
+      </div>
+
       <div className="cards-container">{planCard}</div>
     </div>
   );

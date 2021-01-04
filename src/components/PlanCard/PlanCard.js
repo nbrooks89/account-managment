@@ -1,11 +1,16 @@
 import React from "react";
 import "./PlanCard.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
 function PlanCard({
+  selectedOption,
+  handlePlanChange,
+  selectedPlan,
   id,
   type,
   costMonthly,
-  costAnually,
+  costAnnually,
   detail1,
   detail2,
   detail3,
@@ -17,16 +22,74 @@ function PlanCard({
     <div className="plan-card-container">
       <div className="plan-type">{type}</div>
       <div className="plan-cost">
-        <span className="dollar-sign">$</span>
-        <span className="dollar-amount">{costMonthly}</span>
-        <span className="per-mo">/mo</span>
+        {selectedOption === "monthly" ? (
+          <div>
+            <span className="dollar-sign">$</span>
+            <span className="dollar-amount">{costMonthly}</span>
+            <span className="per-mo">/mo</span>
+          </div>
+        ) : (
+          <div>
+            <span className="dollar-sign">$</span>
+            <span className="dollar-amount">{costAnnually}</span>
+            <span className="per-mo">/year</span>
+          </div>
+        )}
       </div>
-      <div className="plan-detail">{detail1}</div>
-      <div className="plan-detail">{detail2}</div>
-      <div className="plan-detail">{detail3}</div>
-      <div className="plan-detail">{detail4}</div>
-      <div className="plan-detail">{detail5}</div>
-      <div className="plan-detail">{detail6}</div>
+      <div className="plan-detail">
+        <i>
+          <FontAwesomeIcon icon={faCheck} />
+        </i>
+
+        <div>{detail1}</div>
+      </div>
+      <div className="plan-detail">
+        <i>
+          <FontAwesomeIcon icon={faCheck} />
+        </i>
+
+        <div>{detail2}</div>
+      </div>
+      <div className="plan-detail">
+        <i>
+          <FontAwesomeIcon icon={faCheck} />
+        </i>
+        <div>{detail3}</div>
+      </div>
+      <div className="plan-detail">
+        <i>
+          <FontAwesomeIcon icon={faCheck} />
+        </i>
+        <div>{detail4}</div>
+      </div>
+      <div className="plan-detail">
+        <i>
+          <FontAwesomeIcon icon={faCheck} />
+        </i>
+        <div>{detail5}</div>
+      </div>
+      <div className="plan-detail">
+        <i>
+          <FontAwesomeIcon icon={faCheck} />
+        </i>
+        <div>{detail6}</div>
+      </div>
+      <div class="select-plan">
+        <input
+          type="radio"
+          className={id}
+          name={id}
+          id={id}
+          value={id}
+          checked={selectedPlan === id}
+          onChange={handlePlanChange}
+        />
+        {selectedPlan === id ? (
+          <label for={id}>Selected</label>
+        ) : (
+          <label for={id}>Select</label>
+        )}
+      </div>
     </div>
   );
 }
