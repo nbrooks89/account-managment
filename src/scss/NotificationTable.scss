@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,600;0,700;1,200&display=swap");
+.notification-table-container {
+  thead {
+    border-top: hidden;
+    tr {
+      th {
+        font-size: 22px;
+        font-family: "Fira Sans", sans-serif;
+      }
+    }
+  }
+
+  .leftHeader {
+    font-size: 20px;
+    font-weight: 200;
+    font-family: "Fira Sans", sans-serif;
+  }
+}

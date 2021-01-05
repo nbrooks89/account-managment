@@ -1,10 +1,10 @@
-import "./App.scss";
-import LeftNav from "./components/LeftNav/LeftNav";
-import UserProfile from "./pages/UserProfile/UserProfile";
-import Notifications from "./pages/Notifications/Notifications";
-import Plans from "./pages/Plans/Plans";
-import Billing from "./pages/Billing/Billing";
-import SuccessPage from "./pages/SuccessPage/SuccessPage";
+import "./scss/App.scss";
+import LeftNav from "./components/LeftNav";
+import UserProfile from "./pages/UserProfile";
+import Notifications from "./pages/Notifications";
+import Plans from "./pages/Plans";
+import Billing from "./pages/Billing";
+import SuccessPage from "./pages/SuccessPage";
 import { Route } from "react-router-dom";
 
 function App() {

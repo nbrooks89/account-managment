@@ -1,0 +1,22 @@
+.billing-history-container .table {
+  width: 60%;
+}
+
+@media only screen and (max-width: 1250px) {
+  .billing-history-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .billing-history-container .table {
+    width: 60%;
+  }
+}
+/*# sourceMappingURL=BillingHistoryTable.css.map */

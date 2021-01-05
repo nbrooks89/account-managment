@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,600;0,700;1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.plans-container {
+  background-color: rgb(249, 249, 249);
+  padding: 40px 40px;
+
+  button {
+    width: 180px;
+    height: 40px;
+    background-color: #162d6e;
+    color: white;
+    border-radius: 10;
+    align-self: flex-end;
+  }
+}
+
+.plans-main-content {
+  margin: 20px;
+}
+
+.select-membership {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  input {
+    display: none;
+  }
+
+  label {
+    display: inline-block;
+    width: 170px;
+    height: 50px;
+    text-align: center;
+    border: 1px solid rgb(40, 85, 131);
+    background-color: #ffffff;
+    line-height: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+  }
+}
+
+#monthly:checked ~ label[for="monthly"],
+#annual:checked ~ label[for="annual"] {
+  background-color: rgb(245, 245, 245);
+  border: 2px solid #162d6e;
+  color: #162d6e;
+  font-weight: 600;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.65);
+}
+
+.plans-billing-outer-container {
+  display: flex;
+  margin: 0px 0px 0px 40px;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  .plans-payment-form {
+    width: 100%;
+    justify-content: center;
+
+    .payment-on-file-checkbox {
+      margin: 4px 0px;
+      input[type="checkbox"] {
+        transform: scale(1.5);
+        padding: 10px;
+      }
+      label {
+        font-size: 110%;
+        display: inline;
+      }
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 550px;
+    }
+    h5 {
+      margin-bottom: 25px;
+      margin-left: 12px;
+      font-family: "Fira Sans", sans-serif;
+    }
+  }
+  .plans-address-form {
+    justify-content: center;
+    width: 100%;
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 550px;
+    }
+    h5 {
+      margin-bottom: 18px;
+      margin-left: 12px;
+      font-family: "Fira Sans", sans-serif;
+    }
+  }
+}
+
+.billing-inner-container {
+  display: flex;
+}
+
+#card-on-file {
+  margin-left: 18px;
+}
+
+.button-layout {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media only screen and (max-width: 1250px) {
+  .plans-billing-outer-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    .plans-payment-form {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 35px;
+    }
+    .plans-address-form {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

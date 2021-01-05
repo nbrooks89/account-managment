@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAUA,AAAA,0BAA0B,CAAC;EACzB,WAAW,EAAE,IAAI;CAIlB;;AALD,AAEE,0BAFwB,CAExB,MAAM,CAAC;EACL,KAAK,EAAE,GAAG;CACX",
-    "sources": [
-        "BillingHistoryTable.scss"
-    ],
-    "names": [],
-    "file": "BillingHistoryTable.css"
-}

@@ -1,0 +1,13 @@
+.app-container {
+  display: flex;
+
+  main {
+    margin-left: 260px;
+    width: 100%;
+  }
+
+  aside {
+    width: 260px;
+    position: fixed;
+  }
+}

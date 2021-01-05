@@ -1,0 +1,16 @@
+.app-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.app-container main {
+  margin-left: 260px;
+  width: 100%;
+}
+
+.app-container aside {
+  width: 260px;
+  position: fixed;
+}
+/*# sourceMappingURL=App.css.map */
