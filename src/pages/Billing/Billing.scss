@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,600;0,700;1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.billing-container {
+  background-color: rgb(249, 249, 249);
+  height: 100%;
+
+  header {
+    color: rgb(8, 8, 8);
+    padding: 40px 40px 0px 70px;
+    width: 100%;
+
+    p {
+      font-weight: 500;
+      font-size: 16px;
+      font-family: "Fira Sans", sans-serif;
+    }
+    h1 {
+      font-family: "Fira Sans", sans-serif;
+      font-size: 50px;
+    }
+  }
+  button {
+    width: 180px;
+    height: 50px;
+    background-color: #162d6e;
+    color: white;
+    border-radius: 10;
+    font-family: "Fira Sans", sans-serif;
+    margin-top: 10px;
+    align-self: flex-start;
+    margin-left: 0px;
+    border-radius: 5px;
+  }
+}
+
+.forms-container {
+  display: flex;
+  margin: 80px 0px;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  .form-container-payment {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 550px;
+    }
+    h5 {
+      margin-bottom: 35px;
+    }
+  }
+  .form-container-address {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 550px;
+    }
+    h5 {
+      margin-bottom: 18px;
+      margin-left: 12px;
+    }
+  }
+}
+.select-membership-type {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 50px;
+
+  input {
+    display: none;
+  }
+
+  label {
+    display: inline-block;
+    width: 170px;
+    height: 50px;
+    text-align: center;
+    border: 1px solid rgb(161, 159, 159);
+    background-color: #fcf9f9;
+    line-height: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+  }
+}
+
+#monthly:checked ~ label[for="monthly"],
+#annual:checked ~ label[for="annual"] {
+  background-color: rgb(225, 225, 225);
+  border: 2px solid #162d6e;
+  color: #162d6e;
+  font-weight: 600;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.65);
+}

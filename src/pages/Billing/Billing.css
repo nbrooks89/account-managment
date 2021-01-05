@@ -1,17 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,600;0,700;1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.billing-container {
+  background-color: #f9f9f9;
+  height: 100%;
+}
+
 .billing-container header {
-  color: rgb(140, 142, 140);
-  padding: 30px;
-  border-bottom: 1px solid rgb(222, 224, 222);
+  color: #080808;
+  padding: 40px 40px 0px 70px;
+  width: 100%;
 }
-.billing-container .form {
-  margin: 0 50px;
+
+.billing-container header p {
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "Fira Sans", sans-serif;
 }
-.billing-container .form h5 {
-  margin-bottom: 15px;
+
+.billing-container header h1 {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 50px;
+}
+
+.billing-container button {
+  width: 180px;
+  height: 50px;
+  background-color: #162d6e;
+  color: white;
+  border-radius: 10;
+  font-family: "Fira Sans", sans-serif;
+  margin-top: 10px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-left: 0px;
+  border-radius: 5px;
+}
+
+.forms-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 80px 0px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.forms-container .form-container-payment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.forms-container .form-container-payment form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  max-width: 550px;
+}
+
+.forms-container .form-container-payment h5 {
+  margin-bottom: 35px;
+}
+
+.forms-container .form-container-address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.forms-container .form-container-address form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  max-width: 550px;
+}
+
+.forms-container .form-container-address h5 {
+  margin-bottom: 18px;
   margin-left: 12px;
 }
 
-.billing-container .forms-container {
-  margin: 50px 0px;
-  justify-content: space-evenly;
+.select-membership-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
 }
+
+.select-membership-type input {
+  display: none;
+}
+
+.select-membership-type label {
+  display: inline-block;
+  width: 170px;
+  height: 50px;
+  text-align: center;
+  border: 1px solid #a19f9f;
+  background-color: #fcf9f9;
+  line-height: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+}
+
+#monthly:checked ~ label[for="monthly"],
+#annual:checked ~ label[for="annual"] {
+  background-color: #e1e1e1;
+  border: 2px solid #162d6e;
+  color: #162d6e;
+  font-weight: 600;
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.65);
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.65);
+}
+/*# sourceMappingURL=Billing.css.map */

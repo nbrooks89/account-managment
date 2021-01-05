@@ -1,0 +1,16 @@
+.billing-address-field {
+  margin: 10px;
+  max-width: 600px;
+
+  input {
+    border: 1px solid rgb(228, 230, 228);
+    height: 43px;
+    border-radius: 5px;
+  }
+
+  label {
+    width: 100%;
+    margin-bottom: 2px;
+    font-family: "Roboto", sans-serif;
+  }
+}

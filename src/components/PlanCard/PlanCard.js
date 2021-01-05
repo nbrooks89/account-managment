@@ -1,5 +1,5 @@
 import React from "react";
-import "./PlanCard.css";
+import "./PlanCard.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
@@ -18,11 +18,14 @@ function PlanCard({
   detail5,
   detail6,
 }) {
+  console.log(costMonthly);
   return (
     <div className="plan-card-container">
       <div className="plan-type">{type}</div>
       <div className="plan-cost">
-        {selectedOption === "monthly" ? (
+        {!costMonthly && !costAnnually ? (
+          <div></div>
+        ) : selectedOption === "monthly" ? (
           <div>
             <span className="dollar-sign">$</span>
             <span className="dollar-amount">{costMonthly}</span>
@@ -84,7 +87,7 @@ function PlanCard({
           checked={selectedPlan === id}
           onChange={handlePlanChange}
         />
-        {selectedPlan === id ? (
+        {!costMonthly && !costAnnually ? null : selectedPlan === id ? (
           <label for={id}>Selected</label>
         ) : (
           <label for={id}>Select</label>

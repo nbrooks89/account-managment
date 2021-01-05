@@ -1,59 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,600;0,700;1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 .nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 100vh;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: #162d6e;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
 }
 
-.nav-container h5 {
+.nav-container h4 {
   text-align: center;
-  color: rgb(81, 205, 192);
+  font-weight: 800;
+  color: #51cdc0;
   font-family: "Roboto", sans-serif;
+  margin-top: 55px;
+  margin-bottom: 30px;
+  font-size: 20px;
 }
+
 .nav-links-container {
-  padding-left: 25px;
-  padding-right: 50px;
+  padding: 5px 50px 0px 35px;
 }
 
 .nav-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-decoration: none;
+  margin-bottom: 28px;
   font-family: "Roboto", sans-serif;
 }
+
 .nav-item i {
   color: #f2f2f24a;
+  font-size: 25px;
 }
+
 .nav-item p {
   margin-left: 15px;
   text-decoration: none;
   color: #f2f2f29e;
+  font-size: 20px;
+  margin-bottom: 0;
 }
 
 .active p {
-  color: rgb(227, 233, 227);
-  font-size: 16px;
+  color: #e3e9e3;
+  font-size: 20px;
 }
+
 .active i {
-  color: rgb(81, 205, 192);
+  color: #51cdc0;
+  font-size: 25px;
+}
+
+.user-pic-container {
+  height: 180px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #f2f2f227;
+}
+
+.user-pic-container p {
+  color: #e3e9e3;
+  font-size: 18px;
 }
 
 .user-pic-container img {
-  width: 70px;
-  height: 70px;
+  width: 100px;
+  height: 100px;
   border-radius: 50px;
 }
-.user-pic-container p {
-  color: rgb(227, 233, 227);
-  font-size: 16px;
-}
-.user-pic-container {
-  height: 150px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 1px solid #f2f2f227;
-}
+/*# sourceMappingURL=LeftNav.css.map */

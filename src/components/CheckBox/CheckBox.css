@@ -1,4 +1,4 @@
-input[type="checkbox"] {
+.checkbox-container input[type="checkbox"] {
   width: 30px;
   height: 30px;
   margin-right: 8px;
@@ -7,30 +7,24 @@ input[type="checkbox"] {
   visibility: hidden;
 }
 
-input[type="checkbox"] {
-  width: 30px;
-  height: 30px;
-  margin-right: 8px;
-  cursor: pointer;
-  font-size: 17px;
-  visibility: hidden;
-}
-
-input[type="checkbox"]:after {
+.checkbox-container input[type="checkbox"]:after {
   content: " ";
   background-color: #fff;
   display: inline-block;
   margin-left: 15px;
   padding-bottom: 5px;
-  width: 22px;
-  height: 25px;
+  width: 29px;
+  height: 29px;
   visibility: visible;
   border: 1px solid black;
   padding-left: 3px;
 }
 
-input[type="checkbox"]:checked:after {
+.checkbox-container input[type="checkbox"]:checked:after {
   content: "\2714";
   padding: -5px;
+  font-size: 25px;
+  color: #51cdc0;
   font-weight: bold;
 }
+/*# sourceMappingURL=CheckBox.css.map */

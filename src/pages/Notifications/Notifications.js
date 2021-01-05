@@ -1,17 +1,29 @@
-import "./Notifications.css";
+import React, { useState } from "react";
+import "./Notifications.scss";
 import Table from "../../components/Table/Table";
+import { Redirect } from "react-router-dom";
 
 function Notifications() {
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleOnSubmit = (e) => {
+    setSubmitted(true);
+  };
+
   return (
     <div className="notifications-container">
-      <header>
-        <h2>Notification Settings</h2>
-      </header>
-      <div className="table-container">
-        <Table />
+      <form onSubmit={handleOnSubmit}>
+        {submitted === true ? <Redirect to="/success" /> : null}
+        <header>
+          <p>ACCOUNT SETTINGS/</p>
+          <h1>Notifications </h1>
+        </header>
+        <div className="table-container">
+          <Table />
 
-        <button type="submit">Save</button>
-      </div>
+          <button type="submit">Save</button>
+        </div>
+      </form>
     </div>
   );
 }

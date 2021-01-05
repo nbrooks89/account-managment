@@ -1,22 +1,50 @@
-.plans-container header {
-  display: flex;
-  color: rgb(140, 142, 140);
-  padding: 30px;
-  border-bottom: 1px solid rgb(222, 224, 222);
-}
-.cards-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,600;0,700;1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.plans-container {
+  background-color: #f9f9f9;
 }
 
-.plans-container {
+.plans-container header {
+  color: #080808;
+  padding: 40px 40px 0px 70px;
   width: 100%;
 }
+
+.plans-container header p {
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.plans-container header h1 {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 50px;
+}
+
+.plans-container button {
+  width: 180px;
+  height: 40px;
+  background-color: #162d6e;
+  color: white;
+  border-radius: 10;
+  font-family: "Roboto", sans-serif;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.plans-main-content {
+  margin: 20px;
+}
+
 .select-membership {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .select-membership input {
@@ -28,19 +56,51 @@
   width: 170px;
   height: 50px;
   text-align: center;
-  border: 1px solid rgb(161, 159, 159);
+  border: 1px solid #a19f9f;
   background-color: #fcf9f9;
   line-height: 50px;
   cursor: pointer;
   font-weight: 600;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
 }
 
 #monthly:checked ~ label[for="monthly"],
 #annual:checked ~ label[for="annual"] {
-  background-color: #162d6e;
-  border: 2px solid rgb(81, 205, 192);
-  color: #fcf9f9;
+  background-color: #e1e1e1;
+  border: 2px solid #162d6e;
+  color: #162d6e;
   font-weight: 600;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.65);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.65);
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.65);
 }
+
+.billing-outer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 40px 0px;
+}
+
+.billing-inner-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#card-on-file {
+  margin-left: 18px;
+}
+
+.button-layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+/*# sourceMappingURL=Plans.css.map */

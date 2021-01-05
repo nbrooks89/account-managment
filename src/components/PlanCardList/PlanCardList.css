@@ -1,0 +1,28 @@
+.plan-list-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (260px)[3];
+      grid-template-columns: repeat(3, 260px);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  row-gap: 18px;
+  -webkit-column-gap: 18px;
+          column-gap: 18px;
+}
+
+@media only screen and (max-width: 750px) {
+  .plan-list-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (260px)[2];
+        grid-template-columns: repeat(2, 260px);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    row-gap: 18px;
+    -webkit-column-gap: 18px;
+            column-gap: 18px;
+  }
+}
+/*# sourceMappingURL=PlanCardList.css.map */

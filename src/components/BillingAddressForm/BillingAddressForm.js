@@ -1,8 +1,7 @@
-import React, { useState, useReducer } from "react";
-import "./BillingAddressForm.css";
+import React, { useReducer } from "react";
+import "./BillingAddressForm.scss";
 
 function BillingAddressForm() {
-  const [selectedOption, setSelectedOption] = useState("option1");
   const [userInput, setUserInput] = useReducer(
     (state, newState) => ({ ...state, ...newState }),
     {
@@ -22,62 +21,59 @@ function BillingAddressForm() {
 
   return (
     <div className="billing-address-container">
-      <form>
-        <div className=" d-flex flex-column billing-address-field">
-          <label>Full Name</label>
-          <input
-            type="text"
-            name="name"
-            value={userInput.fullName}
-            placeholder="Archie Brooks"
-            onChange={handleInputChange}
-          />
-        </div>
-        <div className="d-flex flex-column billing-address-field">
-          <label>Address 1</label>
-          <input
-            type="text"
-            name="name"
-            value={userInput.address1}
-            placeholder="124 Woof Street"
-            onChange={handleInputChange}
-          />
-        </div>
+      <div className=" d-flex flex-column billing-address-field">
+        <label>Full Name</label>
+        <input
+          type="text"
+          name="name"
+          value={userInput.fullName}
+          placeholder="Archie Brooks"
+          onChange={handleInputChange}
+        />
+      </div>
+      <div className="d-flex flex-column billing-address-field">
+        <label>Address 1</label>
+        <input
+          type="text"
+          name="name"
+          value={userInput.address1}
+          placeholder="124 Woof Street"
+          onChange={handleInputChange}
+        />
+      </div>
 
+      <div className=" d-flex flex-column billing-address-field">
+        <label>City</label>
+        <input
+          type="text"
+          name="name"
+          value={userInput.city}
+          placeholder="Boston"
+          onChange={handleInputChange}
+        />
+      </div>
+      <div className="d-flex flex-row ">
         <div className=" d-flex flex-column billing-address-field">
-          <label>City</label>
+          <label>State</label>
           <input
             type="text"
             name="name"
-            value={userInput.city}
-            placeholder="Boston"
+            value={userInput.state}
+            placeholder="MA"
             onChange={handleInputChange}
           />
         </div>
-        <div className="d-flex flex-row ">
-          <div className=" d-flex flex-column billing-address-field">
-            <label>State</label>
-            <input
-              type="text"
-              name="name"
-              value={userInput.state}
-              placeholder="MA"
-              onChange={handleInputChange}
-            />
-          </div>
-          <div className=" d-flex flex-column billing-address-field">
-            <label>Zip Code</label>
-            <input
-              type="text"
-              name="name"
-              value={userInput.zipCode}
-              placeholder="02144"
-              onChange={handleInputChange}
-            />
-          </div>
+        <div className=" d-flex flex-column billing-address-field">
+          <label>Zip Code</label>
+          <input
+            type="text"
+            name="name"
+            value={userInput.zipCode}
+            placeholder="02144"
+            onChange={handleInputChange}
+          />
         </div>
-        <button type="submit">Submit</button>
-      </form>
+      </div>
     </div>
   );
 }

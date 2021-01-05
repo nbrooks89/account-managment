@@ -1,8 +1,10 @@
-import React, { useReducer } from "react";
-import "./UserProfile.css";
+import React, { useReducer, useState } from "react";
+import "./UserProfile.scss";
 import { Media, Image, Form } from "react-bootstrap";
+import { Redirect } from "react-router-dom";
 
 function UserProfile() {
+  const [submitted, setSubmitted] = useState(false);
   const [userInput, setUserInput] = useReducer(
     (state, newState) => ({ ...state, ...newState }),
     {
@@ -19,10 +21,16 @@ function UserProfile() {
     setUserInput({ [name]: value });
   };
 
+  const handleOnSubmit = (e) => {
+    setSubmitted(true);
+  };
+
   return (
     <div className="user-profile-container">
+      {submitted === true ? <Redirect to="/success" /> : null}
       <header>
-        <h2>Profile Settings</h2>
+        <p>ACCOUNT SETTINGS/</p>
+        <h1>Profile </h1>
       </header>
       <main>
         <Media className="d-flex flex-column align-items-center">
@@ -48,9 +56,9 @@ function UserProfile() {
           </Media.Body>
         </Media>
 
-        <form>
+        <form onSubmit={handleOnSubmit}>
           <div className="field">
-            <label>Name</label>
+            <label>NAME</label>
             <input
               type="text"
               name="name"
@@ -60,7 +68,7 @@ function UserProfile() {
             />
           </div>
           <div className="field">
-            <label>Email</label>
+            <label>EMAIL</label>
             <input
               type="text"
               name="email"
@@ -70,7 +78,7 @@ function UserProfile() {
             />
           </div>
           <div className="field">
-            <label>Phone Number</label>
+            <label>PHONE NUMBER</label>
             <input
               type="text"
               name="phoneNumber"
@@ -80,7 +88,7 @@ function UserProfile() {
             />
           </div>
           <div className="field">
-            <label>Password</label>
+            <label>PASSWORD</label>
             <input
               type="password"
               name="password"
@@ -90,7 +98,7 @@ function UserProfile() {
             />
           </div>
           <div className="field">
-            <label>Confirm Password</label>
+            <label>CONFIRM PASSWORD</label>
             <input
               name="confirmPassword"
               value={userInput.confirmPassword}
@@ -99,7 +107,7 @@ function UserProfile() {
             />
           </div>
 
-          <button type="submit">Submit</button>
+          <button type="submit">Save</button>
         </form>
       </main>
     </div>

@@ -1,14 +1,16 @@
-/* .table-container {
-  margin: 0 60px;
-} */
-thead {
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,600;0,700;1,200&display=swap");
+.table-container thead {
   border-top: hidden;
 }
 
-thead tr th {
-  font-size: 24px;
+.table-container thead tr th {
+  font-size: 22px;
+  font-family: "Fira Sans", sans-serif;
 }
 
-.leftHeader {
+.table-container .leftHeader {
   font-size: 20px;
+  font-weight: 200;
+  font-family: "Fira Sans", sans-serif;
 }
+/*# sourceMappingURL=Table.css.map */

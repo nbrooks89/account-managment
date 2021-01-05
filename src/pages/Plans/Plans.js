@@ -1,6 +1,9 @@
 import React, { useState } from "react";
-import "./Plans.css";
-import PlanCard from "../../components/PlanCard/PlanCard";
+import "./Plans.scss";
+import PlanCardList from "../../components/PlanCardList/PlanCardList";
+import BillingAddressForm from "../../components/BillingAddressForm/BillingAddressForm";
+import PaymentMethodForm from "../../components/PaymentMethodForm/PaymentMethodForm";
+import { Redirect } from "react-router-dom";
 
 const planDetails = [
   {
@@ -39,12 +42,22 @@ const planDetails = [
     detail5: "Automated Checks Run Every 12 Hours",
     detail6: "Dedicated Account Manager",
   },
+  {
+    type: "Add Ons",
+
+    detail1: "CIS Level 1 & 2: $100 per account per month",
+    detail2: "HIPAA: $100 per account per month",
+    detail3: "SOC 2: $500 per account per month",
+    detail4: "Webapp Penetration Testing: $250 per account    ",
+    detail5: "Automated Checks Run Every 2 Days",
+    detail6: "Support Response Within 3 days",
+  },
 ];
 function Plans() {
   const [selectedOption, setSelectedOption] = useState("monthly");
   const [selectedPlan, setSelectedPlan] = useState("basic");
-  console.log(selectedPlan);
-  console.log(selectedOption);
+  const [submitted, setSubmitted] = useState(false);
+
   const handleMembershipChange = (event) => {
     setSelectedOption(event.target.value);
   };
@@ -52,55 +65,70 @@ function Plans() {
     setSelectedPlan(event.target.value);
   };
 
-  const planCard = planDetails.map((plan) => {
-    return (
-      <div>
-        <PlanCard
-          selectedOption={selectedOption}
-          selectedPlan={selectedPlan}
-          setSelectedPlan={setSelectedPlan}
-          handlePlanChange={handlePlanChange}
-          id={plan.id}
-          type={plan.type}
-          costMonthly={plan.costMonthly}
-          costAnnually={plan.costAnnually}
-          detail1={plan.detail1}
-          detail2={plan.detail2}
-          detail3={plan.detail3}
-          detail4={plan.detail4}
-          detail5={plan.detail5}
-          detail6={plan.detail6}
-        />
-      </div>
-    );
-  });
+  const handleOnSubmit = (e) => {
+    setSubmitted(true);
+  };
+
   return (
     <div className="plans-container">
+      {submitted === true ? <Redirect to="/success" /> : null}
       <header>
-        <h2>Plans Settings</h2>
+        <p>ACCOUNT SETTINGS/</p>
+        <h1>Plans </h1>
       </header>
-      <div class="select-membership">
-        <input
-          type="radio"
-          name="annual"
-          id="annual"
-          value="annual"
-          checked={selectedOption === "annual"}
-          onChange={handleMembershipChange}
-        />
-        <input
-          type="radio"
-          name="monthly"
-          id="monthly"
-          value="monthly"
-          checked={selectedOption === "monthly"}
-          onChange={handleMembershipChange}
-        />
-        <label for="annual">Annual</label>
-        <label for="monthly">Monthly</label>
-      </div>
+      <div className="plans-main-content">
+        <form onSubmit={handleOnSubmit}>
+          <div class="select-membership">
+            <input
+              type="radio"
+              name="annual"
+              id="annual"
+              value="annual"
+              checked={selectedOption === "annual"}
+              onChange={handleMembershipChange}
+            />
+            <input
+              type="radio"
+              name="monthly"
+              id="monthly"
+              value="monthly"
+              checked={selectedOption === "monthly"}
+              onChange={handleMembershipChange}
+            />
+            <label for="annual">Annual</label>
+            <label for="monthly">Monthly</label>
+          </div>
 
-      <div className="cards-container">{planCard}</div>
+          <PlanCardList
+            planDetails={planDetails}
+            selectedOption={selectedOption}
+            selectedPlan={selectedPlan}
+            setSelectedPlan={setSelectedPlan}
+            handlePlanChange={handlePlanChange}
+          />
+          <input
+            type="checkbox"
+            id="card-on-file"
+            name="card-on-file"
+            value="card-on-file"
+          />
+          <label for="card-on-file"> Use card on file</label>
+          <div className="billing-outer-container">
+            <div>
+              <h5>Payment Method</h5>
+              <PaymentMethodForm />
+            </div>
+
+            <div>
+              <h5>Billing Address</h5>
+              <BillingAddressForm />
+            </div>
+          </div>
+          <div className="button-layout">
+            <button type="submit">Save</button>
+          </div>
+        </form>
+      </div>
     </div>
   );
 }

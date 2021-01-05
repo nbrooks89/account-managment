@@ -14,7 +14,7 @@ function LeftNav() {
         <img src="archie.jpg" alt="userImage" />
         <p>Archie Brooks</p>
       </div>
-      <h5> ACCOUNT SETTINGS</h5>
+      <h4> ACCOUNT SETTINGS</h4>
       <div className="nav-links-container">
         <NavLink exact to="/" className="nav-item" activeClassName="active">
           <i>
