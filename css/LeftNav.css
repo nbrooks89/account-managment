@@ -1,17 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,600;0,700;1,200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 .nav-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 100vh;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   background-color: #162d6e;
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
-          box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
 }
 
 .nav-container h4 {
@@ -29,12 +23,8 @@
 }
 
 .nav-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-decoration: none;
   margin-bottom: 28px;
   font-family: "Roboto", sans-serif;
@@ -66,19 +56,10 @@
 .user-pic-container {
   height: 180px;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border-bottom: 1px solid #f2f2f227;
 }
 

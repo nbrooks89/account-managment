@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,600;0,700;1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.billing-container {
+  background-color: #f9f9f9;
+  height: 100%;
+  padding: 40px 40px;
+}
+
+.billing-container button {
+  width: 180px;
+  height: 50px;
+  background-color: #162d6e;
+  color: white;
+  border-radius: 10;
+  font-family: "Fira Sans", sans-serif;
+  margin-top: 10px;
+  align-self: flex-start;
+  margin-left: 0px;
+  border-radius: 5px;
+}
+
+.billing-forms-container {
+  display: flex;
+  margin: 80px 0px;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+.billing-forms-container .billing-payment-form {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.billing-forms-container .billing-payment-form form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 550px;
+}
+
+.billing-forms-container .billing-payment-form h5 {
+  margin-bottom: 35px;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.billing-forms-container .billing-address-form {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+}
+
+.billing-forms-container .billing-address-form form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 550px;
+}
+
+.billing-forms-container .billing-address-form h5 {
+  font-family: "Fira Sans", sans-serif;
+  margin-bottom: 18px;
+  margin-left: 12px;
+}
+
+.select-membership-type {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.select-membership-type input {
+  display: none;
+}
+
+.select-membership-type label {
+  font-family: "Fira Sans", sans-serif;
+  display: inline-block;
+  width: 170px;
+  height: 50px;
+  text-align: center;
+  border: 1px solid #969595;
+  background-color: #fcf9f9;
+  line-height: 50px;
+  cursor: pointer;
+  font-weight: 900;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+}
+
+#monthly:checked ~ label[for="monthly"],
+#annual:checked ~ label[for="annual"] {
+  background-color: #e1e1e1;
+  border: 2px solid #162d6e;
+  color: #162d6e;
+  font-weight: 600;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.65);
+}
+
+@media only screen and (max-width: 1250px) {
+  .billing-forms-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .billing-forms-container .billing-address-form {
+    margin-top: 40px;
+  }
+}
+/*# sourceMappingURL=Billing.css.map */

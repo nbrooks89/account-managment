@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,600;0,700;1,200&display=swap");
+.billing-address-field {
+  margin: 10px;
+  max-width: 600px;
+  margin-right: 10px;
+}
+
+.billing-address-field input {
+  border: 1px solid #bbbaba;
+  height: 43px;
+  border-radius: 5px;
+}
+
+.billing-address-field label {
+  font-family: "Fira Sans", sans-serif;
+  width: 100%;
+  margin-bottom: 2px;
+}
+/*# sourceMappingURL=BillingAddressForm.css.map */

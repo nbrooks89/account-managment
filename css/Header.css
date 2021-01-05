@@ -1,0 +1,18 @@
+.header-container {
+  color: #080808;
+  padding: 40px 40px 0px 70px;
+  width: 100%;
+  border-bottom: 1px solid #929191;
+}
+
+.header-container h6 {
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.header-container h1 {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 50px;
+}
+/*# sourceMappingURL=Header.css.map */

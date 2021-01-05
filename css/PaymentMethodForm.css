@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,600;0,700;1,200&display=swap");
+.radio-container {
+  display: flex;
+  margin-top: 10px;
+  margin-left: 14px;
+}
+
+.radio-container label img {
+  height: 35px;
+  margin-left: 8px;
+  margin-right: 25px;
+}
+
+.card-info-field {
+  margin: 10px;
+}
+
+.card-info-field input {
+  border: 1px solid #bbbaba;
+  height: 43px;
+  max-width: 500px;
+  border-radius: 5px;
+}
+
+.card-info-field label {
+  width: 100%;
+  margin-bottom: 0px;
+  font-size: 16px;
+  font-family: "Fira Sans", sans-serif;
+}
+/*# sourceMappingURL=PaymentMethodForm.css.map */
