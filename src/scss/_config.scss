@@ -1,0 +1,22 @@
+//----------VARIABLES-------------------
+
+$dark-blue: #162d6e;
+$aqua: rgb(81, 205, 192);
+
+//----------MIXINS---------------------------
+@mixin submit-button {
+  width: 180px;
+  height: 50px;
+  color: white;
+  font-family: "Fira Sans", sans-serif;
+  margin-top: 20px;
+  margin-left: 0px;
+  border-radius: 5px;
+}
+
+@mixin text-input-field {
+  border: 1px solid rgb(188, 189, 188);
+  padding: 10px;
+  height: 50px;
+  border-radius: 5px;
+}

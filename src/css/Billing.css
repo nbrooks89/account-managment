@@ -9,48 +9,31 @@
 .billing-container button {
   width: 180px;
   height: 50px;
-  background-color: #162d6e;
   color: white;
-  border-radius: 10;
   font-family: "Fira Sans", sans-serif;
-  margin-top: 10px;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+  margin-top: 20px;
   margin-left: 0px;
   border-radius: 5px;
+  background-color: #162d6e;
+  margin-left: 10px;
 }
 
 .billing-forms-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: 80px 0px;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  justify-content: space-evenly;
+  align-items: flex-end;
 }
 
 .billing-forms-container .billing-payment-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .billing-forms-container .billing-payment-form form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   width: 100%;
   max-width: 550px;
 }
@@ -61,26 +44,15 @@
 }
 
 .billing-forms-container .billing-address-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: flex-end;
+  justify-content: center;
   width: 100%;
 }
 
 .billing-forms-container .billing-address-form form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   width: 100%;
   max-width: 550px;
 }
@@ -92,16 +64,9 @@
 }
 
 .select-membership-type {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   margin-bottom: 50px;
 }
 
@@ -111,7 +76,6 @@
 
 .select-membership-type label {
   font-family: "Fira Sans", sans-serif;
-  display: inline-block;
   width: 170px;
   height: 50px;
   text-align: center;
@@ -120,8 +84,7 @@
   line-height: 50px;
   cursor: pointer;
   font-weight: 900;
-  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
-          box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
 }
 
 #monthly:checked ~ label[for="monthly"],
@@ -130,19 +93,13 @@
   border: 2px solid #162d6e;
   color: #162d6e;
   font-weight: 600;
-  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.65);
-          box-shadow: 0 0 8px rgba(0, 0, 0, 0.65);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.65);
 }
 
 @media only screen and (max-width: 1250px) {
   .billing-forms-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .billing-forms-container .billing-address-form {
     margin-top: 40px;

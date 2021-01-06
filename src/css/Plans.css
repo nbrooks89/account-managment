@@ -7,12 +7,13 @@
 
 .plans-container button {
   width: 180px;
-  height: 40px;
-  background-color: #162d6e;
+  height: 50px;
   color: white;
-  border-radius: 10;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  font-family: "Fira Sans", sans-serif;
+  margin-top: 20px;
+  margin-left: 0px;
+  border-radius: 5px;
+  background-color: #162d6e;
 }
 
 .plans-main-content {
@@ -20,12 +21,8 @@
 }
 
 .select-membership {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -44,8 +41,7 @@
   line-height: 50px;
   cursor: pointer;
   font-weight: 600;
-  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
-          box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
 }
 
 #monthly:checked ~ label[for="monthly"],
@@ -54,28 +50,19 @@
   border: 2px solid #162d6e;
   color: #162d6e;
   font-weight: 600;
-  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.65);
-          box-shadow: 0 0 8px rgba(0, 0, 0, 0.65);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.65);
 }
 
 .plans-billing-outer-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: 0px 0px 0px 40px;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  justify-content: space-evenly;
+  align-items: flex-end;
 }
 
 .plans-billing-outer-container .plans-payment-form {
   width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .plans-billing-outer-container .plans-payment-form .payment-on-file-checkbox {
@@ -83,8 +70,7 @@
 }
 
 .plans-billing-outer-container .plans-payment-form .payment-on-file-checkbox input[type="checkbox"] {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  transform: scale(1.5);
   padding: 10px;
 }
 
@@ -94,13 +80,8 @@
 }
 
 .plans-billing-outer-container .plans-payment-form form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   width: 100%;
   max-width: 550px;
 }
@@ -112,20 +93,13 @@
 }
 
 .plans-billing-outer-container .plans-address-form {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   width: 100%;
 }
 
 .plans-billing-outer-container .plans-address-form form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   width: 100%;
   max-width: 550px;
 }
@@ -137,8 +111,6 @@
 }
 
 .billing-inner-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -147,43 +119,24 @@
 }
 
 .button-layout {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 @media only screen and (max-width: 1250px) {
   .plans-billing-outer-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     margin-top: 10px;
   }
   .plans-billing-outer-container .plans-payment-form {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     margin-bottom: 35px;
   }
   .plans-billing-outer-container .plans-address-form {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
 /*# sourceMappingURL=Plans.css.map */

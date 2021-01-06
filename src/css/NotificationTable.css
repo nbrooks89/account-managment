@@ -6,6 +6,12 @@
 .notification-table-container thead tr th {
   font-size: 22px;
   font-family: "Fira Sans", sans-serif;
+  text-align: center;
+}
+
+.notification-table-container tbody tr td img {
+  margin-left: 10px;
+  height: 30px;
 }
 
 .notification-table-container .leftHeader {

@@ -6,8 +6,9 @@
 }
 
 .billing-address-field input {
-  border: 1px solid #bbbaba;
-  height: 43px;
+  border: 1px solid #bcbdbc;
+  padding: 10px;
+  height: 50px;
   border-radius: 5px;
 }
 

@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,600;0,700;1,200&display=swap");
+@import "config";
 .user-profile-container {
   background-color: rgb(249, 249, 249);
-  height: 100%;
+  height: 100vh;
   padding: 40px 40px;
 
   .user-profile-main-content {
@@ -22,15 +23,9 @@
       width: 60%;
     }
     button {
-      width: 180px;
-      height: 50px;
-      background-color: #162d6e;
-      color: white;
-      border-radius: 10;
-      font-family: "Fira Sans", sans-serif;
-      margin: 15px 5px 0px 0px;
+      @include submit-button;
+      background-color: $dark-blue;
       float: right;
-      border-radius: 5px;
     }
   }
 }
@@ -42,8 +37,7 @@
   justify-content: space-between;
   input {
     width: 70%;
-    border: 1px solid rgb(188, 189, 188);
-    padding: 10px;
+    @include text-input-field;
   }
   label {
     width: 30%;

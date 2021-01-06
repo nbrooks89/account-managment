@@ -2,19 +2,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,600;0,700;1,200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap");
 .plan-card-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
   border: 1px solid #162d6e;
-  -webkit-box-shadow: 0 0 9px rgba(168, 168, 168, 0.75);
-          box-shadow: 0 0 9px rgba(168, 168, 168, 0.75);
+  box-shadow: 0 0 9px rgba(168, 168, 168, 0.75);
   padding: 15px;
   max-width: 280px;
   margin: 0px 5px 30px 5px;
@@ -31,8 +24,7 @@
 }
 
 .plan-card-container:hover {
-  -webkit-box-shadow: 0 0 9px rgba(0, 0, 0, 0.75);
-          box-shadow: 0 0 9px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 0 9px rgba(0, 0, 0, 0.75);
 }
 
 .plan-type {
@@ -60,8 +52,6 @@
 }
 
 .plan-detail {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   margin: 5px;
@@ -76,8 +66,6 @@
 
 .select-plan {
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -96,10 +84,8 @@
   line-height: 50px;
   border-radius: 5px;
   cursor: pointer;
-  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
-          box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+  align-self: flex-end;
 }
 
 #lite:checked ~ label[for="lite"],
@@ -109,7 +95,6 @@
   border: 2px solid #172524;
   color: #fcf9f9;
   font-weight: 600;
-  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.65);
-          box-shadow: 0 0 3px rgba(0, 0, 0, 0.65);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.65);
 }
 /*# sourceMappingURL=PlanCard.css.map */

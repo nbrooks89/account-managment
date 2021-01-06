@@ -9,17 +9,16 @@ const NotificationTable = () => {
         <thead>
           <tr>
             <th className="invisible"></th>
-            <th>Email </th>
-            <th> Slack</th>
-            <th>Twilio</th>
-            <th> SNS</th>
+            <th>Security </th>
+            <th> Compliance</th>
+            <th>Cost Savings</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td className="leftHeader">Security</td>
-            <td>
-              <CheckBox />
+            <td className="leftHeader">
+              Email
+              <img src="email.png" alt="userImage" />
             </td>
             <td>
               <CheckBox />
@@ -32,9 +31,8 @@ const NotificationTable = () => {
             </td>
           </tr>
           <tr>
-            <td className="leftHeader">Compliance</td>
-            <td>
-              <CheckBox />
+            <td className="leftHeader">
+              Slack <img src="slack.png" alt="userImage" />
             </td>
             <td>
               <CheckBox />
@@ -47,9 +45,50 @@ const NotificationTable = () => {
             </td>
           </tr>
           <tr>
-            <td className="leftHeader">Cost Savings</td>
+            <td className="leftHeader">
+              Twilio <img src="twilio.png" alt="userImage" />
+            </td>
             <td>
               <CheckBox />
+            </td>
+            <td>
+              <CheckBox />
+            </td>
+            <td>
+              <CheckBox />
+            </td>
+          </tr>
+          <tr>
+            <td className="leftHeader">
+              Facebook <img src="facebook.png" alt="userImage" />
+            </td>
+            <td>
+              <CheckBox />
+            </td>
+            <td>
+              <CheckBox />
+            </td>
+            <td>
+              <CheckBox />
+            </td>
+          </tr>
+          <tr>
+            <td className="leftHeader">
+              Instagram <img src="instagram.png" alt="userImage" />
+            </td>
+            <td>
+              <CheckBox />
+            </td>
+            <td>
+              <CheckBox />
+            </td>
+            <td>
+              <CheckBox />
+            </td>
+          </tr>
+          <tr>
+            <td className="leftHeader">
+              Twitter <img src="twitter.png" alt="userImage" />
             </td>
             <td>
               <CheckBox />

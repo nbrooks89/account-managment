@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AACE,0BADwB,CACxB,MAAM,CAAC;EACL,KAAK,EAAE,GAAG;CACX;;AAEH,MAAM,MAAM,MAAM,MAAM,SAAS,EAAE,MAAM;EACvC,AAAA,0BAA0B,CAAC;IACzB,OAAO,EAAE,IAAI;IACb,cAAc,EAAE,MAAM;IACtB,WAAW,EAAE,MAAM;GAIpB;EAPD,AAIE,0BAJwB,CAIxB,MAAM,CAAC;IACL,KAAK,EAAE,GAAG;GACX",
-    "sources": [
-        "../src/scss/BillingHistoryTable.scss"
-    ],
-    "names": [],
-    "file": "BillingHistoryTable.css"
-}
